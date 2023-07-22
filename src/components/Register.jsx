@@ -64,7 +64,10 @@ export const Register = () => {
         REGISTER_URL,
         JSON.stringify({ user, pwd }),
         {
-          headers: { "Content-Type": "application/json" },
+          headers: { 
+            "Content-Type": "application/json" ,
+            'Access-Control-Allow-Origin': '*'
+          },
           withCredentials: true,
         }
       );
