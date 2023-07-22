@@ -4,7 +4,6 @@ import useAuth from "../hooks/useAuth";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import useInput from "../hooks/useInput";
 import useToggle from "../hooks/useToggle";
-import { Link } from "react-router-dom";
 
 const LOGIN_URL = "/auth";
 
