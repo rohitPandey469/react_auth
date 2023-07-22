@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "../api/axios";
+import { Link } from "react-router-dom";
 
 const USER_REGEX = /^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/;
 const PWD_REGEX =
@@ -222,7 +223,7 @@ export const Register = () => {
             Already registered?
             <br />
             <span className="line">
-              <a href="/login">Sign In</a>
+              <Link href="/login">Sign In</Link>
             </span>
           </p>
         </section>

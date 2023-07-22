@@ -1,9 +1,10 @@
 import { useRef, useState, useEffect } from "react";
 import axios from "../api/axios";
 import useAuth from "../hooks/useAuth";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import useInput from "../hooks/useInput";
 import useToggle from "../hooks/useToggle";
+import { Link } from "react-router-dom";
 
 const LOGIN_URL = "/auth";
 
@@ -117,7 +118,7 @@ const Login = () => {
           Need an account?
           <br />
           <span className="line">
-            <a href="/register">Sign Up</a>
+            <Link href="/register">Sign Up</Link>
           </span>
         </p>
       </form>
