@@ -7,7 +7,7 @@ import Admin from "./components/Admin";
 import Missing from "./components/Missing";
 import Unauthorized from "./components/Unauthorized";
 import Lounge from "./components/Lounge";
-import LinkPage from "./components/Linkpage";
+import LinkPage from "./components/LinkPage";
 import RequireAuth from "./components/RequireAuth";
 // import PersistLogin from "./components/PersistLogin";
 import { Routes, Route } from "react-router-dom";
