@@ -109,13 +109,13 @@ const Login = () => {
             onChange={toggleCheck}
             checked={check}
           />
-          <label htmlFor="persist">Trust This Device</label>
+          <label htmlFor="persist" className="trust">Trust This Device</label>
         </div>
         <p>
           Need an account?
           <br />
           <span className="line">
-            <a href="#">Sign Up</a>
+            <a href="/register">Sign Up</a>
           </span>
         </p>
       </form>

@@ -91,7 +91,7 @@ export const Register = () => {
         <section>
           <h1>Success!</h1>
           <p>
-            <a href="#">Sign In</a>
+            <a href="/login">Sign In</a>
           </p>
         </section>
       ) : (
@@ -138,7 +138,7 @@ export const Register = () => {
               <br />
               Must begin with a alphabet.
               <br />
-              C'mon man you can do this.
+              No Spaces Buddy.
             </p>
 
             <label htmlFor="password">
@@ -220,7 +220,7 @@ export const Register = () => {
             Already registered?
             <br />
             <span className="line">
-              <a href="#">Sign In</a>
+              <a href="/login">Sign In</a>
             </span>
           </p>
         </section>
