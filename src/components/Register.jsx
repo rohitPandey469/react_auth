@@ -223,7 +223,7 @@ export const Register = () => {
             Already registered?
             <br />
             <span className="line">
-              <Link href="/login">Sign In</Link>
+              <Link to="/login">Sign In</Link>
             </span>
           </p>
         </section>
