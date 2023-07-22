@@ -68,8 +68,6 @@ export const Register = () => {
           withCredentials: true,
         }
       );
-      console.log(response.data);
-      console.log(JSON.stringify(response));
       setSuccess(true);
       // clear out the input fields
       setUser("");
