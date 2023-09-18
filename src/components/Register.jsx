@@ -239,7 +239,7 @@ export const Register = () => {
                         !validName || !validPwd || !validMatch ? true : false
                       }
                       type="submit"
-                      className="btn btn-primary"
+                      className="btn "
                     >
                       Register
                     </button>
