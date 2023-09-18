@@ -4,6 +4,9 @@ import useAuth from "../hooks/useAuth";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import useInput from "../hooks/useInput";
 import useToggle from "../hooks/useToggle";
+import Nws from "../assets/Notwithus.png";
+import left from "../assets/imageL.png";
+import right from "../assets/imageRight.png";
 
 const LOGIN_URL = "/auth";
 
@@ -38,7 +41,7 @@ const Login = () => {
         LOGIN_URL,
         JSON.stringify({ user, pwd }),
         {
-          headers: { 
+          headers: {
             "Content-Type": "application/json",
           },
           withCredentials: true,
@@ -76,51 +79,89 @@ const Login = () => {
 
   return (
     <section>
-      <p
-        ref={errRef}
-        className={errMsg ? "errmsg" : "offscreen"}
-        aria-live="assertive"
-      >
-        {errMsg}
-      </p>
-      <h1>Sign In</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="username">Username:</label>
-        <input
-          type="text"
-          id="username"
-          ref={userRef}
-          autoComplete="off"
-          {...userAttribs}
-          required
-        />
-        <label htmlFor="pwd">Password:</label>
-        <input
-          type="password"
-          id="pwd"
-          autoComplete="off"
-          onChange={(e) => setPwd(e.target.value)}
-          value={pwd}
-          required
-        />
-        <button>Sign In</button>
-        <div className="persistCheck">
-          <input
-            type="checkbox"
-            id="persist"
-            onChange={toggleCheck}
-            checked={check}
-          />
-          <label htmlFor="persist" className="trust">Trust This Device</label>
-        </div>
-        <p>
-          Need an account?
-          <br />
-          <span className="line">
-            <Link to="/register">Sign Up</Link>
-          </span>
-        </p>
-      </form>
+      <img src={right} className="right" alt="" />
+      <img src={left} className="left" alt="" />
+
+      <div className="body">
+        <ul
+          className="d-flex text-center flex-column justify-content-center"
+          style={{ listStyle: "none" }}
+        >
+          <p className="radial d-flex justify-content-center "></p>
+
+          <li>
+            <h1>Welcome!!</h1>
+          </li>
+          <li>
+            <h3>Login to get the best experience </h3>
+          </li>
+          <li>
+            {/* -------------------------------------------- */}
+            <form onSubmit={handleSubmit} className="container">
+              <p
+                ref={errRef}
+                className={errMsg ? "errmsg" : "offscreen"}
+                aria-live="assertive"
+              >
+                {errMsg}
+              </p>
+              <h3 className="">Login</h3>
+              <div>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Username"
+                    aria-describedby="emailHelp"
+                    ref={userRef}
+                    autoComplete="off"
+                    {...userAttribs}
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                    autoComplete="off"
+                    onChange={(e) => setPwd(e.target.value)}
+                    value={pwd}
+                    required
+                  />
+                </div>
+
+                <button type="submit" className="btn btn-primary ">
+                  Login
+                </button>
+                {/* <div className="persistCheck">
+                  <label
+                    htmlFor="persist"
+                    className="trust"
+                  >
+                    <input
+                      type="checkbox"
+                      id="persist"
+                      onChange={toggleCheck}
+                      checked={check}
+                    />
+                    Trust This Device
+                  </label>
+                </div> */}
+                <img src={Nws} alt="" style={{ width: 346 + "px" }} />
+
+                <Link to="/register">
+                  <button type="submit" className="btn btn-primary">
+                    Register
+                  </button>
+                </Link>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };
