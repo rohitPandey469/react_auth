@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 
 * {
   margin: 0;
@@ -11,7 +12,7 @@ li {
 }
 
 html {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Gilroy-Bold', sans-serif;
   font-size: 22px;
   color: #fff;
 }
@@ -53,7 +54,8 @@ a,
 a:visited {
   color: #fff;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -122,6 +124,7 @@ button {
 }
 
 
+
 .App {
   text-align: center;
 }
@@ -169,10 +172,12 @@ button {
 
 /* /* -------------------- */
 body {
-  background-color: #081C15;
+  background: var(--Color-1, #081C15);
   margin-top: 1rem;
   overflow-x: hidden;
   transition: all 0.3s;
+  font-family: 'Gilroy-Bold', sans-serif;
+
 }
 
 h1 {
@@ -180,11 +185,12 @@ h1 {
     #D8F3DC;
   line-height: 75px;
   letter-spacing: 0em;
+  font-weight: 500;
 
 }
 
 h3 {
-
+  font-weight: 600;
   color:
     white;
   letter-spacing: 0em;
@@ -207,6 +213,7 @@ h3 {
 
 
 .container {
+
   background-color: rgb(255, 255, 255);
   color: white;
   width: 446px;
@@ -215,13 +222,11 @@ h3 {
   padding-bottom: 2rem;
 
   top: 296px;
-  left: 433px;
-  border-radius: 20px;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(20px);
-  background: linear-gradient(130.61deg, rgba(82, 183, 136, 0.8) -16.98%, rgba(82, 183, 136, 0.2) 106.52%);
-
-  border: 1px solid #688C78
+  left: 400px;
+  border-radius: 1.5rem;
+  border: 1px solid #688C78;
+  background: var(--Glass1, linear-gradient(131deg, rgba(82, 183, 136, 0.80) -16.98%, rgba(82, 183, 136, 0.20) 106.52%));
+  backdrop-filter: blur(10px);
 }
 
 .container input {
@@ -235,9 +240,10 @@ h3 {
 
 .btn {
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   width: 400px;
-  background-color: #2D6A4F;
+  border-radius: 0.75rem;
+  background: var(--Color-7, #95D5B2);
   border: 1px solid;
 }
 
@@ -246,31 +252,43 @@ h3 {
   color: black;
 }
 
-.right,
-.left {
-  position: absolute;
-  width: 399px;
-  height: 319px;
-  top: 150px;
-  left: 493px;
-  angle: -180 deg;
-
+.back {
+  display: flex;
+  justify-content: end;
 }
 
 .left {
-  left: -15%;
+  position: absolute;
+  left: -0.5rem;
+  top: 10.5rem;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  width: 28.6875rem;
+  height: 25.6875rem;
+  flex-shrink: 0;
+  opacity: 0.8;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+  mix-blend-mode: color-dodge;
+
 }
 
 .right {
-  height: 419px;
-  width: 800px;
   position: absolute;
-  left: 55%;
-  top: 100px;
+  right: -10rem;
+  top: 8rem;
+  width: 50.5625rem;
+  height: 30.75rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+  opacity: 0.8;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+  mix-blend-mode: color-dodge;
 
+}
 
+.btn:visited {
+  background-color: #40916C;
 }
 
 /* --------------------------Navbar-------------------------------------------
@@ -278,6 +296,11 @@ h3 {
 
 .navbar {
   background-color: #081C15;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5.5rem;
+  z-index: 100;
 }
 
 .logo {
@@ -290,7 +313,7 @@ h3 {
 }
 
 .nav-link {
-  color: #74C69D;
+  color: #D8F3DC;
   margin: 0.5rem;
 }
 
@@ -298,7 +321,7 @@ h3 {
   color: #74C69D;
 }
 
-.nav-link:active {
+.nav-link:visited {
   color: #D8F3DC;
 }
 
@@ -326,18 +349,15 @@ h3 {
   transform-origin: bottom left;
 }
 
-.btnsm {
-  height: 3rem;
-}
-
 /* ---------------------------------------------Banner--------------------------------- */
 .carousel {
-  height: 5rem;
+  margin-top: 7rem;
+  height: 10.5rem;
   width: 100vw;
 }
 
 .carousel img {
-  height: 5rem;
+  height: 10.5rem;
   width: 100vw;
 }
 
@@ -351,11 +371,12 @@ h3 {
 }
 
 .ulist li {
-  margin: 1rem;
-  width: 12rem;
-  height: 17rem;
+  font-size: 1rem;
+  margin: 10px;
+  width: 14.437rem;
+  height: 20rem;
   top: 182px;
-  left: 375px;
+  left: 7.87rem;
   border-radius: 20px;
   border: 1px solid #40916C;
   transition: all 0.2s;
@@ -372,8 +393,118 @@ h3 {
 }
 
 .ulist img {
-  width: 12rem;
-  height: 14rem;
+  width: 13.312rem;
+  height: 16rem;
   border-radius: 20px;
   padding: 0.5rem;
 }
+
+.space {
+  justify-content: space-between;
+}
+
+.register {
+  font-size: 1.15rem;
+  color: var(--Color-8, #D8F3DC);
+  width: 11.375rem;
+  height: 2.8125rem;
+  padding: 0;
+  margin-right: 3.5rem;
+  border: none;
+  background: var(--Color-3, #2D6A4F);
+}
+
+.register:hover {
+  background-color: #40916C;
+  color: var(--Color-8, #D8F3DC);
+
+}
+
+.space {
+  margin: 0.5rem;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------- */
+.navbar-rectangle {
+  width: 82rem;
+  height: 4.3rem;
+  flex-shrink: 0;
+  border-radius: 0rem 0rem 0.75rem 0.75rem;
+  background: var(--Color-2, #1B4332);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.your-own-doctor {
+  color: #FFF;
+  font-family: 'Gilroy-SemiBold';
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.robot-img {
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+  border-radius: 4rem;
+  background: url("./assets/Ellipse 2.svg"), lightgray 50% / cover no-repeat, #D9D9D9;
+}
+
+.chat-page-input {
+  width: 82.5rem;
+  height: 4rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: var(--Color-8, #D8F3DC);
+}
+
+.chatbot-p {
+  max-width: 70%;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #95D5B2;
+  color: black;
+}
+
+.chatbot-p span {
+  margin: 5px;
+}
+
+.chatbot-p span:first-child {
+  margin-right: 0;
+}
+
+.user_msg {
+  text-align: right;
+  margin-left: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.user {
+  width: 30%;
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+/* --------------------------------------------------------- */

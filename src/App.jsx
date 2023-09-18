@@ -6,6 +6,7 @@ import Editor from "./components/Editor";
 import Admin from "./components/Admin";
 import Missing from "./components/Missing";
 import Unauthorized from "./components/Unauthorized";
+import Chatbot from "./components/Chatbot";
 import Lounge from "./components/Lounge";
 import LinkPage from "./components/LinkPage";
 import RequireAuth from "./components/RequireAuth";
@@ -32,6 +33,9 @@ const App = () => {
 
         {/* ROUTES TO PROTECT */}
         <Route element={<PersistLogin />}>
+          <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
+            <Route path="chatbot" element={<Chatbot />} />
+          </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
             <Route path="/" element={<Home />} />
           </Route>
