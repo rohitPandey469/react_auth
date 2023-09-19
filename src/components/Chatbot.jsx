@@ -8,7 +8,7 @@ import robot from "../assets/Ellipse 2.svg";
 
 const Chatbot = () => {
   // useEffect(() => {
-  //   eventQuery("welcomeToMyBot");
+  //   eventQuery("welcomeToMyDocBot");
   // }, []);
 
   const [text, setText] = useState("");
@@ -101,22 +101,20 @@ const Chatbot = () => {
             <i>{isTyping ? "Typing" : ""}</i>
           </p>
         </div> */}
-        <form
-          style={{
-            minWidth: "100vw",
-          }}
+        
+      </main>
+      <form
           onSubmit={handleSubmit}
         >
           <input
             style={{
-              position: "fixed",
+              position: "",
               left: 0,
               right: 0,
               bottom: 0,
               height: "4rem",
-              width: "37%",
-            margin: "5px auto",
-
+              width: "100%",
+              margin: "5px auto",
             }}
             className="chat-page-input"
             class="form-input chat-page-input"
@@ -126,7 +124,6 @@ const Chatbot = () => {
             type="text"
           />
         </form>
-      </main>
     </>
   );
 };
