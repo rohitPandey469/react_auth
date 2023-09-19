@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/Group 1.svg";
-import location from "../assets/location.png";
+import location from "../assets/location.svg";
 
 export default function map() {
   return (

@@ -276,8 +276,7 @@ h3 {
   position: absolute;
   right: -10rem;
   top: 8rem;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+
   width: 50.5625rem;
   height: 30.75rem;
   flex-shrink: 0;
@@ -288,8 +287,11 @@ h3 {
   mix-blend-mode: color-dodge;
 
 }
-.btn:active{
-  
+
+/* .btn:active {} */
+
+.btn {
+  border: none;
 }
 
 .btn:visited {
@@ -490,6 +492,73 @@ h3 {
   background: var(--Color-3, #2D6A4F);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&family=Ysabeau+Infant:wght@400&display=swap");
+
+body {
+  background-color: #081c15;
+}
+
+.logo {
+  width: 4.81856rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+  display: block;
+  margin: auto;
+}
+
+.para {
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.subPara {
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bro {
+  width: 18.875rem;
+  height: 18.25rem;
+  flex-shrink: 0;
+  display: block;
+  margin: auto;
+}
+
+.GetStarted {
+  border-radius: 1.5rem;
+  background: var(--Color-6, #74c69d);
+  width: 20.1875rem;
+  height: 4.25rem;
+  flex-shrink: 0;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.GetStarted:hover {
+  background: var(--Color-3, #2d6a4f);
+}
+
+.GetStarted-text {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 
 

@@ -13,7 +13,9 @@ import RequireAuth from "./components/RequireAuth";
 // import PersistLogin from "./components/PersistLogin";
 import { Routes, Route } from "react-router-dom";
 import PersistLogin from "./components/PersistLogin";
-import map from "./components/Map";
+import Map from "./components/Map";
+// import GetStarted from "./components/GetStarted";
+import GetStarted from "./components/GetStarted";
 
 const ROLES = {
   User: 2001,
@@ -31,7 +33,9 @@ const App = () => {
         <Route path="register" element={<Register />} />
         <Route path="linkpage" element={<LinkPage />} />
         <Route path="unauthorized" element={<Unauthorized />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<GetStarted />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="store" element={<Map />} />
 
         {/* ROUTES TO PROTECT */}
         <Route element={<PersistLogin />}>
@@ -40,6 +44,9 @@ const App = () => {
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
             <Route path="chatbot" element={<Chatbot />} />
+          </Route>
+          <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
+            {/* <Route path="store" element={<Map />} /> */}
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
             <Route path="map" element={<Map />} />

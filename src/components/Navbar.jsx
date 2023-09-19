@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/Group 1.svg";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg ">
