@@ -7,9 +7,9 @@ import Navbar from "./Navbar";
 import robot from "../assets/Ellipse 2.svg";
 
 const Chatbot = () => {
-  useEffect(() => {
-    eventQuery("welcomeToMyBot");
-  }, []);
+  // useEffect(() => {
+  //   eventQuery("welcomeToMyBot");
+  // }, []);
 
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(true);

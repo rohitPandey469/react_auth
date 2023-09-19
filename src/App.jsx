@@ -31,11 +31,12 @@ const App = () => {
         <Route path="register" element={<Register />} />
         <Route path="linkpage" element={<LinkPage />} />
         <Route path="unauthorized" element={<Unauthorized />} />
+        <Route path="/" element={<Home />} />
 
         {/* ROUTES TO PROTECT */}
         <Route element={<PersistLogin />}>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
             <Route path="chatbot" element={<Chatbot />} />

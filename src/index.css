@@ -276,6 +276,8 @@ h3 {
   position: absolute;
   right: -10rem;
   top: 8rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   width: 50.5625rem;
   height: 30.75rem;
   flex-shrink: 0;
@@ -285,6 +287,9 @@ h3 {
   /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
   mix-blend-mode: color-dodge;
 
+}
+.btn:active{
+  
 }
 
 .btn:visited {
@@ -424,6 +429,146 @@ h3 {
   margin: 0.5rem;
   color: white;
 }
+
+/* ---------------------------------
+   */
+.divmap2 {
+  width: 45rem;
+  height: 45rem;
+  flex-shrink: 0;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 600px;
+  height: 400px;
+  top: 8rem;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 600px;
+  height: 400px;
+}
+
+.gmap_iframe {
+  width: 600px !important;
+  height: 400px !important;
+}
+
+.gmap_canvas {
+  border-radius: 1.5rem;
+
+}
+
+.divmap1 {
+  margin-top: 3rem;
+  display: inline-flex;
+  padding: 1rem 1.25rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  height: 6.625rem;
+  width: 26.68rem;
+  margin-right: 13rem;
+}
+
+.divmap1 div {
+  margin: 1rem;
+}
+
+.ligreen {
+  background: var(--Color-4, #40916C);
+  border-radius: 0.75rem;
+  margin: 1rem;
+  width: 22.6875rem;
+  padding: 0
+}
+
+.dgreen {
+  background: var(--Color-3, #2D6A4F);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

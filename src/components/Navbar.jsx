@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src={Logo} alt="" className="logo" />
         </a>
         <button
@@ -55,15 +55,15 @@ const Navbar = () => {
               <li class="nav-item dropdown">
                 <a
                   class="nav-link hover-underline-animation"
-                  href="#"
+                  href="/store"
                   role="button"
                 >
-                  Consult{" "}
+                  Offline Store
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link hover-underline-animation" href="#">
-                  Offline Store
+                  Consult{" "}
                 </a>
               </li>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
                 <Link to="/register">
                   <button
                     className="btn  btnsm"
-                    style={{ width: 10 + "rem", marginRight: 1 + "rem" }}
+                    style={{ width: 10 + "rem", marginRight: 1 + "rem" ,marginTop:"0.55rem"}}
                   >
                     Registration
                   </button>

@@ -240,6 +240,9 @@ export const Register = () => {
                       }
                       type="submit"
                       className="btn "
+                      style={{
+                        backgroundColor:"95D5B2"
+                      }}
                     >
                       Register
                     </button>
