@@ -43,7 +43,11 @@ const Navbar = () => {
           <div class="d-flex justify-content-end">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link to="/allproducts" class="nav-link hover-underline-animation " href="#">
+                <Link
+                  to="/allproducts"
+                  class="nav-link hover-underline-animation "
+                  href="#"
+                >
                   All Products
                 </Link>
               </li>
@@ -58,15 +62,19 @@ const Navbar = () => {
               </li>
               <li class="nav-item dropdown">
                 <Link
-                  class="nav-link hover-underline-animation"
                   to="/store"
+                  class="nav-link hover-underline-animation"
                   role="button"
                 >
                   Offline Store
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/consult" class="nav-link hover-underline-animation" href="#">
+                <Link
+                  to="/consult"
+                  class="nav-link hover-underline-animation"
+                  href="#"
+                >
                   Consult{" "}
                 </Link>
               </li>
