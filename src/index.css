@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.cdnfonts.com/css/gilroy-semibold');
 
 * {
   margin: 0;
@@ -492,7 +493,7 @@ h3 {
   background: var(--Color-3, #2D6A4F);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&family=Ysabeau+Infant:wght@400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&family=Ysabeau+Infant:wght@400&display=swap"); */
 
 body {
   background-color: #081c15;
@@ -510,7 +511,7 @@ body {
 .para {
   color: #fff;
   text-align: center;
-  font-family: Ubuntu;
+  font-family:'Gilroy-SemiBold';
   font-size: 3rem;
   font-style: normal;
   font-weight: 500;

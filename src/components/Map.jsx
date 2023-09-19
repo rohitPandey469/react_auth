@@ -27,18 +27,31 @@ export default function map() {
                 <div>
                   <img src={location} alt="" className="" />
                 </div>
-                <div>
-                  Patanjali Ayurvedic Store <br /> 20 KM away <br />
-                  Mayur Vihar Phase-II, Delhi
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <p>Patanjali Ayurvedic Store </p> <p>20 KM away </p>
+                  <p>Mayur Vihar Phase-II, Delhi</p>
                 </div>
               </li>
               <li className="d-flex ligreen dgreen">
                 <div>
                   <img src={location} alt="" className="" />
                 </div>
-                <div>
-                  Patanjali Ayurvedic Store <br /> 20 KM away <br />
-                  Mayur Vihar Phase-II, Delhi
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                  }}
+                  className="d-flex justify-content-start"
+                >
+                  <p>Patanjali Ayurvedic Store</p> <p>20 KM away </p>
+                  <p> Mayur Vihar Phase-II, Delhi</p>
                 </div>
               </li>
             </ul>
@@ -54,18 +67,30 @@ export default function map() {
                 <div>
                   <img src={location} alt="" className="" />
                 </div>
-                <div>
-                  Patanjali Ayurvedic Store <br /> 20 KM away <br />
-                  Mayur Vihar Phase-II, Delhi
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <p>Patanjali Ayurvedic Store</p> <p>20 KM away </p>
+                  <p>Mayur Vihar Phase-II, Delhi</p>
                 </div>
               </li>
               <li className="d-flex ligreen dgreen">
                 <div>
                   <img src={location} alt="" className="" />
                 </div>
-                <div>
-                  Patanjali Ayurvedic Store <br /> 20 KM away <br />
-                  Mayur Vihar Phase-II, Delhi
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <p>Patanjali Ayurvedic Store </p> <p>20 KM away</p>
+                  <p>Mayur Vihar Phase-II, Delhi</p>
                 </div>
               </li>
             </ul>

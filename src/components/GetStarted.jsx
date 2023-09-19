@@ -17,7 +17,15 @@ function GetStarted() {
       <img src={Logo} className="logo" alt="" />
       <GetStart />
       <img src={Img2} className="bro" alt="bro" />
-      <Link to="/home" className="btn GetStarted">
+      <Link
+        to="/home"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        className="btn GetStarted"
+      >
         {" "}
         <span className="GetStarted-text">Get Started</span>{" "}
       </Link>
