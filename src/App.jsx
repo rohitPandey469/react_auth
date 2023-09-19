@@ -13,6 +13,7 @@ import RequireAuth from "./components/RequireAuth";
 // import PersistLogin from "./components/PersistLogin";
 import { Routes, Route } from "react-router-dom";
 import PersistLogin from "./components/PersistLogin";
+import map from "./components/Map";
 
 const ROLES = {
   User: 2001,
@@ -34,10 +35,13 @@ const App = () => {
         {/* ROUTES TO PROTECT */}
         <Route element={<PersistLogin />}>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
+            <Route path="/" element={<Home />} />
+          </Route>
+          <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
             <Route path="chatbot" element={<Chatbot />} />
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
-            <Route path="/" element={<Home />} />
+            <Route path="map" element={<Map />} />
           </Route>
 
           <Route element={<RequireAuth allowedRoles={[ROLES.Editor]} />}>
