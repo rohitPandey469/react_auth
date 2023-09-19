@@ -2,14 +2,13 @@ import React from "react";
 import Logo from "../assets/Group 1.svg";
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
+        <Link class="navbar-brand" to="/home">
           <img src={Logo} alt="" className="logo" />
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -44,35 +43,43 @@ const Navbar = () => {
           <div class="d-flex justify-content-end">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link hover-underline-animation " href="#">
+                <Link to="/allproducts" class="nav-link hover-underline-animation " href="#">
                   All Products
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link hover-underline-animation" href="#">
+                <Link
+                  to="/knowledge"
+                  class="nav-link hover-underline-animation"
+                  href="#"
+                >
                   Knowledge
-                </a>
+                </Link>
               </li>
               <li class="nav-item dropdown">
-                <a
+                <Link
                   class="nav-link hover-underline-animation"
-                  href="/store"
+                  to="/store"
                   role="button"
                 >
                   Offline Store
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link hover-underline-animation" href="#">
+                <Link to="/consult" class="nav-link hover-underline-animation" href="#">
                   Consult{" "}
-                </a>
+                </Link>
               </li>
 
               <li>
                 <Link to="/register">
                   <button
                     className="btn  btnsm"
-                    style={{ width: 10 + "rem", marginRight: 1 + "rem" ,marginTop:"0.55rem"}}
+                    style={{
+                      width: 10 + "rem",
+                      marginRight: 1 + "rem",
+                      marginTop: "0.55rem",
+                    }}
                   >
                     Registration
                   </button>
