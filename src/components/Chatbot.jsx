@@ -19,7 +19,7 @@ const Chatbot = () => {
   // with the help of redux toolkit - pulling out the data from redux
   const msgs = useSelector((state) => state?.queriesReducer.messages);
   useEffect(() => {
-    let scrollH = document.body.scrollHeight;
+    let scrollH = document.body.scrollHeight - 60;
     window.scrollTo(0, scrollH);
   }, [msgs]);
   useEffect(() => {
@@ -95,14 +95,16 @@ const Chatbot = () => {
           <img className="robot-img" src={robot} alt="" />
           <p className="your-own-doctor">Your own doctor</p>
         </div>
-        <section style={{ marginTop: "1rem" }}>{renderMsg(msgs)}</section>
-        <div className={isTyping ? "" : "hide"}>
+        <section style={{ marginBottom: "1rem" }}>{renderMsg(msgs)}</section>
+        {/* <div className={isTyping ? "" : "hide"}>
           <p className="chatbot-p">
             <i>{isTyping ? "Typing" : ""}</i>
           </p>
-        </div>
+        </div> */}
         <form
-          style={{ position: " sticky", bottom: 0 }}
+          style={{
+            minWidth: "100vw",
+          }}
           onSubmit={handleSubmit}
         >
           <input
@@ -111,6 +113,10 @@ const Chatbot = () => {
               left: 0,
               right: 0,
               bottom: 0,
+              height: "4rem",
+              width: "37%",
+            margin: "5px auto",
+
             }}
             className="chat-page-input"
             class="form-input chat-page-input"
