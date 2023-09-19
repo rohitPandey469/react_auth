@@ -492,10 +492,11 @@ h3 {
   background: var(--Color-3, #2D6A4F);
 }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&family=Ysabeau+Infant:wght@400&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&family=Ysabeau+Infant:wght@400&display=swap");
 
 body {
   background-color: #081c15;
+  transition: all 0.3s;
 }
 
 .logo {
