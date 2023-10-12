@@ -16,6 +16,7 @@ import PersistLogin from "./components/PersistLogin";
 import Map from "./components/Map";
 // import GetStarted from "./components/GetStarted";
 import GetStarted from "./components/GetStarted";
+import Diagnose from "./components/Diagnose";
 
 const ROLES = {
   User: 2001,
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/" element={<GetStarted />} />
         <Route path="/home" element={<Home />} />
         <Route path="store" element={<Map />} />
+        <Route path="diagnose" element={<Diagnose />} />
 
         {/* ROUTES TO PROTECT */}
         <Route element={<PersistLogin />}>
@@ -44,6 +46,9 @@ const App = () => {
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
             <Route path="chatbot" element={<Chatbot />} />
+          </Route>
+          <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
+            {/* <Route path="diagnose" element={<Diagnose />} /> */}
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
             {/* <Route path="store" element={<Map />} /> */}
